@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="create-zip" name="IGV.js">
+<project basedir="." default="create-zip" name="IGV">
 
 
 <property name="dirOffset" value="../common_module_code" />
