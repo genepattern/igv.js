@@ -23,6 +23,10 @@ function getFileExtension(file) {
     return file.replace(/^.*?\.([a-zA-Z0-9]+)$/, "$1");
 }
 
+function is_bed(name) {
+    return name.endsWith(".bed") || name.endsWith(".bed.gz");
+}
+
 $(function() {
     var tracks = [];
     var igv_options = {
@@ -34,29 +38,44 @@ $(function() {
     var index = requestParams["index.file"];
 
     var genome = requestParams["genome"];
-    if (genome == null) {
+    if (genome === null) {
         genome = "hg19";
     }
     else {
         igv_options["reference"] = {
-            id: genome
+            id: genome[0]
         };
+        igv_options["genome"] = genome[0];
+    }
+
+    var locus = requestParams["locus"][0];
+    if (locus !== null && locus !== "") {
+        igv_options["locus"] = decodeURIComponent(locus);
     }
 
     var inputFiles = requestParams["input.file"];
-    if(inputFiles == null) {
+    if(inputFiles === null) {
         alert("No input files found");
     }
     else {
         inputFiles.forEach(function(url) {
             var name = getFilename(decodeURIComponent(url));
+
             var track = {
                 url: decodeURIComponent(url),
-                name: name,
-                displayMode: "EXPANDED"
+                name: name
             };
 
-            if (index) {
+            if (is_bed(name)) {
+                track["format"] = "bed";
+                track["type"] = "annotation";
+                track["sourceType"] = "file";
+                track["displayMode"] = "EXPANDED";
+                track["order"] = Number.MAX_VALUE;
+                track["visibilityWindow"] = 300000000;
+            }
+
+            if (is_bed(name) && index) {
                 track["indexURL"] = decodeURIComponent(index);
             }
 
