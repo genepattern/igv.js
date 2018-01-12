@@ -38,14 +38,33 @@ $(function() {
     var index = requestParams["index.file"];
 
     var genome = requestParams["genome"];
-    if (genome === null) {
-        genome = "hg19";
-    }
-    else {
+
+    // If using a hosted genome
+    if (genome !== null && genome[0] !== "" && genome[0] !== "none") {
         igv_options["reference"] = {
             id: genome[0]
         };
-        igv_options["genome"] = genome[0];
+    }
+
+    // If using a custom genome
+    else {
+        igv_options["reference"] = {};
+
+        const genome_fasta = requestParams["genome.fasta.file"];
+        const genome_index = requestParams["genome.index.file"];
+        const genome_cytoband = requestParams["genome.cytoband.file"];
+
+        if (genome_fasta !== undefined && genome_fasta !== null && genome_fasta[0]) {
+            igv_options["reference"]["fastaURL"] = decodeURIComponent(genome_fasta[0]);
+        }
+
+        if (genome_index !== undefined && genome_index !== null && genome_index[0]) {
+            igv_options["reference"]["indexURL"] = decodeURIComponent(genome_index[0]);
+        }
+
+        if (genome_cytoband !== undefined && genome_cytoband !== null && genome_cytoband[0]) {
+            igv_options["reference"]["cytobandURL"] = decodeURIComponent(genome_cytoband[0]);
+        }
     }
 
     var locus = requestParams["locus"][0];
