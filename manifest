@@ -1,9 +1,8 @@
-#Tue, 04 Aug 2015 15:40:08 -0400
-#IGV
-#Mon Apr 25 23:37:57 EDT 2011
+#Fri, 11 Jan 2019 09:56:32 -0800
+#igv.js
 JVMLevel=1.6
-LSID=urn\:lsid\:8080.genepatt.genepattern.broadinstitute.org\:genepatternmodules\:8229\:999999999
-version=Modified to IGV-Web javascript version
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:999999999
+version=Updated to igv.js v2.1.0
 
 author=Barbara Hill, Marc-Danie Nazaire, Thorin Tabor, Jim Robinson, Peter Carr (Broad Institute)
 commandLine=igv_web.html ? <input.file> <index.file> <genome> <locus>
@@ -11,13 +10,13 @@ cpuType=any
 description=Launches igv.js with input file(s)
 fileFormat=
 language=JavaScript
-name=IGV.js
+name=igv.js
 os=any
 
 p1_MODE=IN
 p1_TYPE=FILE
 p1_default_value=
-p1_description=Track dataset to be viewed in IGV
+p1_description=Track dataset to be viewed in igv.js
 p1_fileFormat=bam;bed;cbs.txt;clm;cls;cn;Comparative Marker Selection;csv;Dataset;gct;glad;igv;loh;maf;Matrix;sam;res;seg;snp;txt;xcn;xls;xml;zip;gff;gff3;gtf;wig;psl;bedgraph;bw;bigwig;bb;bigbed;tdf;vcf;gz
 p1_name=input.file
 p1_numValues=1+
@@ -41,7 +40,7 @@ p2_url=on
 p2_value=
 
 p3_default_value=
-p3_description=Choose the genome for your data. IGV will launch with hg19.
+p3_description=Choose the genome for your data.
 p3_fileFormat=
 p3_name=genome
 p3_optional=
@@ -90,7 +89,7 @@ p6_value=
 
 
 p7_default_value=
-p7_description=Provide a locus or gene of interest for your data. IGV will launch on chr1.
+p7_description=Provide a locus or gene of interest for your data. igv.js will launch on chr1.
 p7_fileFormat=
 p7_name=locus
 p7_optional=on
@@ -109,4 +108,4 @@ taskType=javascript
 taskDoc=doc.html
 userid=
 
-publicationDate=10/24/2016 15\:40
+publicationDate=01/11/2019 09\:56 
