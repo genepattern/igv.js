@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="create-zip" name="IGV">
+<project basedir="." default="create-zip" name="igv.js">
 
 
 <property name="dirOffset" value="../common_module_code" />
@@ -16,8 +16,6 @@
         <zipfileset dir="css" prefix="css" includes="*.css"/>
         <zipfileset dir="img" prefix="img" includes="*.png"/>
         <zipfileset dir="jquery" prefix="jquery" includes="*"/>
-        <zipfileset dir="font-awesome" prefix="font-awesome"/>
-        <zipfileset dir="igv" prefix="igv"/>
     </zip>
     <antcall target="postzip"/>
 </target>

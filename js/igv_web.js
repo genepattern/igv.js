@@ -11,8 +11,7 @@ function getFilename(file) {
     var fileName = file;
     var index = fileName.lastIndexOf("/");
 
-    if(index != -1)
-    {
+    if(index !== -1) {
         return fileName.substring(index + 1);
     }
 
@@ -158,7 +157,7 @@ $(function() {
         //    }
         //}
 
-        if (tracks.length != 0) {
+        if (tracks.length !== 0) {
             igv_options["tracks"] = tracks;
             var div = $("#myDiv")[0];
 
