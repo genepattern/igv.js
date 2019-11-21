@@ -93,7 +93,7 @@ $(function() {
                 track["visibilityWindow"] = 300000000;
             }
 
-            if (is_bed(name) && index) {
+            if (index) {
                 track["indexURL"] = decodeURIComponent(index);
             }
 
