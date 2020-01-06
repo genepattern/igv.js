@@ -1,8 +1,8 @@
 #Fri, 11 Jan 2019 09:56:32 -0800
 #igv.js
 JVMLevel=1.6
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:999999999
-version=Updated to igv.js v2.1.0
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:1.0
+version=Updated to igv.js v2.3.5
 
 author=Barbara Hill, Marc-Danie Nazaire, Thorin Tabor, Jim Robinson, Peter Carr (Broad Institute)
 commandLine=igv_web.html ? <input.file> <index.file> <genome> <locus>
@@ -108,4 +108,4 @@ taskType=javascript
 taskDoc=doc.html
 userid=
 
-publicationDate=01/11/2019 09\:56 
+publicationDate=01/06/2020 09\:56
