@@ -46,7 +46,7 @@ p3_name=genome
 p3_optional=
 p3_prefix_when_specified=
 p3_type=java.lang.String
-p3_value=\=Select a genome;none\=Custom genome (provide files below);hg18\=Human hg18;hg19\=Human hg19;hg38\=Human hg38;GRCh37\=Human GRCh37;GRCh38\=Human GRCh38;mm10\=Mouse mm10;GRCm38\=Mouse GRCm38;Zv9\=Zebrafish (Zv9/danRer7)
+p3_value=\=Select a genome;none\=Custom genome (provide files below);hg38\=Human (GRCh38/hg38);hg19\=Human (CRCh37/hg19);hg18\=Human (hg18);mm10\=Mouse (GRCm38/mm10);panTro4\=Chimp (SAC 2.1.4/panTro4);panPan2\=Bonobo (MPI-EVA panpan1.1/panPan2);bosTau8\=Cow (UMD_3.1.1/bosTau8);ce11\=C. elegans (ce11);canFam3\=Dog (Broad CanFam3.1/canFam3);dm6\=D. melanogaster (dm6);gorGor4\=Gorilla (gorGor4.1/gorGor4);susScr11\=Pig (SGSC Sscrofa11.1/susScr11);rn6\=Rat (RGCS 6.0/rn6);sacCer3\=S. cerevisiae (sacCer3);danRer11\=Zebrafish (GRCZ11/danRer11);danRer10\=Zebrafish (GRCZ10/danRer10)
 
 p4_MODE=IN
 p4_TYPE=FILE
