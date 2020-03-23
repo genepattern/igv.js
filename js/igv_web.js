@@ -377,7 +377,7 @@ $(function() {
         }
     }
 
-    var locus = requestParams["locus"][0];
+    var locus = "locus" in requestParams ? requestParams["locus"].length > 0 ? requestParams["locus"][0] : null : null;
     if (locus !== null && locus !== "") {
         igv_options["locus"] = decodeURIComponent(locus);
     }
