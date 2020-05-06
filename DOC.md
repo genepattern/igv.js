@@ -38,4 +38,4 @@ James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eri
 > Index file to use for a reference genome. Only necessary if genome is not provided above.
 
 **locus** 
-> Provide a locus or gene of interest for your data. igv.js will launch on chr1.
+> Provide a locus or gene of interest for your data. If left blank igv.js will launch on all.
