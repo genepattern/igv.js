@@ -1,0 +1,9 @@
+#
+# Test with example data uploaded from this directory.
+#
+name: igv.js smoke test
+module: igv.js
+params:
+    input.file: segmented_data_080520.seg.gz
+assertions:
+    jobStatus: success
