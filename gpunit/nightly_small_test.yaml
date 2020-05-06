@@ -5,5 +5,7 @@ name: igv.js smoke test
 module: igv.js
 params:
     input.file: segmented_data_080520.seg.gz
+    genome: "Human (CRCh37/hg19)"
+    locus: "chr7"
 assertions:
     jobStatus: success

@@ -1,7 +1,7 @@
 #Fri, 11 Jan 2019 09:56:32 -0800
 #igv.js
 JVMLevel=1.6
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:2.2
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:2.4
 version=Bug fix for optional locus parameter when run from notebook
 
 author=Barbara Hill, Marc-Danie Nazaire, Thorin Tabor, Jim Robinson, Peter Carr (Broad Institute)
