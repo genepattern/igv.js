@@ -8,7 +8,7 @@
 This module launches igv.js on a specified data files. For full documentation and more information about igv.js, please visit 
 the [igv.js repository](https://github.com/igvteam/igv.js#igvjs). This does not run the desktop (Java) version of IGV.
 
-v2.1 of this module runs [igv.js v2.3.5](https://github.com/igvteam/igv.js/releases/tag/v2.3.5)
+v2.3 of this module runs [igv.js v2.3.5](https://github.com/igvteam/igv.js/releases/tag/v2.3.5)
 
 ## References
 
