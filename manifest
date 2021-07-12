@@ -1,8 +1,8 @@
 #Fri, 11 Jan 2019 09:56:32 -0800
 #igv.js
 JVMLevel=1.6
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:2.1
-version=Updated to igv.js v2.3.5
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:2.4
+version=Bug fix for optional locus parameter when run from notebook
 
 author=Barbara Hill, Marc-Danie Nazaire, Thorin Tabor, Jim Robinson, Peter Carr (Broad Institute)
 commandLine=igv_web.html ? <input.file> <index.file> <genome> <locus>
@@ -89,7 +89,7 @@ p6_value=
 
 
 p7_default_value=
-p7_description=Provide a locus or gene of interest for your data. igv.js will launch on chr1.
+p7_description=Provide a locus or gene of interest for your data. If left blank, igv.js will launch on all.
 p7_fileFormat=
 p7_name=locus
 p7_optional=on
@@ -105,6 +105,7 @@ requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/
 
 serializedModel=
 taskType=javascript
+categories=viewer
 taskDoc=doc.html
 userid=
 
