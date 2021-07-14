@@ -295,6 +295,35 @@ const genome_list = [
   }
 ];
 
+$(function() {
+    //setup the global Authorization token
+    var token = window.location.hash;
+    if(token !== undefined && token !== null && token.length > 0)
+    {
+        token = token.substring(1);
+        $.ajaxSetup({
+            headers: {},
+            beforeSend: async function(xhr, settings) {
+                if (!!window.location.hash) {
+                    const response = await fetch(settings.url, {
+                        method: 'HEAD',
+                        cache: 'no-cache',
+                        mode: 'cors',
+                        credentials: 'include',
+                        headers: {
+                            'Authorization': 'Bearer ' + token
+                        },
+                        redirect: 'follow'
+                    });
+
+                    if (!response.headers.has('x-amz-request-id')) // If not an S3 redirect, attach the authorization header
+                        xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+                }
+            }
+        });
+    }
+});
+
 function get_genome_urls(id) {
     let match = null;
     genome_list.forEach(function(g) {
