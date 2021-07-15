@@ -1,17 +1,31 @@
-#Fri, 11 Jan 2019 09:56:32 -0800
 #igv.js
 JVMLevel=1.6
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00363\:2.4
-version=Bug fix for optional locus parameter when run from notebook
+version=Bug fix for S3 files
 
 author=Barbara Hill, Marc-Danie Nazaire, Thorin Tabor, Jim Robinson, Peter Carr (Broad Institute)
 commandLine=igv_web.html ? <input.file> <index.file> <genome> <locus>
 cpuType=any
 description=Launches igv.js with input file(s)
 fileFormat=
-language=JavaScript
+language=Javascript
 name=igv.js
 os=any
+src.repo=https://github.com/genepattern/igv.js.git
+
+pipelineModel=
+privacy=public
+quality=production
+requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:GenePattern_3_9_1\:0.1,
+requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/GenePattern_3_9_1/broadinstitute.org\:plugin/GenePattern_3_9_1/0.1/GenePattern_3_9_1.zip
+
+serializedModel=
+taskType=javascript
+categories=viewer
+taskDoc=doc.html
+userid=
+
+publicationDate=07/13/2021 09\:56
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -97,16 +111,4 @@ p7_prefix_when_specified=
 p7_type=java.lang.String
 p7_value=
 
-pipelineModel=
-privacy=public
-quality=production
-requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:GenePattern_3_9_1\:0.1,
-requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/GenePattern_3_9_1/broadinstitute.org\:plugin/GenePattern_3_9_1/0.1/GenePattern_3_9_1.zip
 
-serializedModel=
-taskType=javascript
-categories=viewer
-taskDoc=doc.html
-userid=
-
-publicationDate=01/06/2020 09\:56
